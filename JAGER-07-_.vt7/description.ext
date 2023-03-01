@@ -1,22 +1,22 @@
 author = "DiRaven#0001";
-onLoadName = "Єгер ТВТ";
-onLoadMission = "Єгер ТВТ: А ви точно впевнені шо воно вам треба?";
+onLoadName = "КРУК";
+onLoadMission = "КРУК: А ви точно впевнені шо воно вам треба?";
 	// loadScreen = "images\loadScreen.paa";
-enableDebugConsole = 1;
+enableDebugConsole = 0;
 
 disableChannels[] = {
 	{0, false, true}, //--- Global Chat
-	{1, false, true}, //--- Side Chat
+	{1, true, true}, //--- Side Chat
 	{2, true, true}, //--- Command Chat
 	{3, true, true}, //--- Group Chat
 	{4, true, true}, //--- Vehicle Chat
-	{5, true, true}, //--- Direct Chat
+	{5, false, true}, //--- Direct Chat
 	{6, true, true} //--- System Chat
 };
 
 class Header
 {
-	gameType = TvT;	// Game type
+	gameType = Coop;	// Game type
 };
 
 class CfgDifficultyPresets
@@ -63,7 +63,7 @@ class CfgDifficultyPresets
 		tacticalPing = 0;		// Tactical Ping		(0 = disabled, 1 = enabled)
 
 			// Personal awareness
-		weaponInfo = 0;			// Weapon info			(0 = never, 1 = fade out, 2 = always)
+		weaponInfo = 1;			// Weapon info			(0 = never, 1 = fade out, 2 = always)
 		stanceIndicator = 0;	// Stance indicator		(0 = never, 1 = fade out, 2 = always)
 		staminaBar = 0;			// Stamina bar			(0 = disabled, 1 = enabled)
 		weaponCrosshair = 0;	// Weapon crosshair		(0 = disabled, 1 = enabled)
@@ -87,35 +87,4 @@ class CfgDifficultyPresets
 		multipleSaves = 0;		// Multiple saves		(0 = disabled, 1 = enabled)
 	};
 };
-};
-
-class CfgDebriefing
-{
-	class End1
-	{
-		title = "Перемога синіх";
-		subtitle = "";
-		description = "Сині успішно вивезли уаз.";
-		pictureBackground = "";
-		picture = "b_inf";
-		pictureColor[] = { 0.0, 0.0, 1, 1 };
-	};
-	class End2
-	{
-		title = "Перемога червоних";
-		subtitle = "";
-		description = "Червоні успішно вивезли уаз.";
-		pictureBackground = "";
-		picture = "b_inf";
-		pictureColor[] = { 1, 0.0, 0.0, 1 };
-	};
-	class End3
-	{
-		title = "Нічия";
-		subtitle = "";
-		description = "Уаз знищено або вивезено в невідомому напрямку.";
-		pictureBackground = "";
-		picture = "b_inf";
-		pictureColor[] = { 1, 1, 1, 1 };
-	};
 };
