@@ -1,6 +1,6 @@
 author = "DiRaven#0001";
-onLoadName = "КРУК";
-onLoadMission = "КРУК: А ви точно впевнені шо воно вам треба?";
+onLoadName = "JAGERv2";
+onLoadMission = "JAGERv2: Місія 7 - Рутина";
 	// loadScreen = "images\loadScreen.paa";
 enableDebugConsole = 0;
 
