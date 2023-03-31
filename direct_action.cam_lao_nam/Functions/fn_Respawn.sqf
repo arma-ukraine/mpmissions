@@ -297,7 +297,7 @@
 		
 	// Soldier Tracker
 
-		// [] execVM "functions\fn_QS_icons.sqf";
+		[] execVM "functions\fn_QS_icons.sqf";
 		
 
 	// Mission Level	

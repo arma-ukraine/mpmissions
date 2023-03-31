@@ -4,7 +4,15 @@ respawnOnStart = 0;
 disabledAI = 1;
 briefing = 0;
 
-disableChannels[]={{0, true, true},{1, false, false},{2, false, false},{3, false, false},{4, false, false},{5, false, false},{6, true, true}};
+disableChannels[] = {
+	{0, false, true}, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, true, true}, //--- Group Chat
+	{4, true, true}, //--- Vehicle Chat
+	{5, false, true}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
 
 corpseManagerMode = 1;
 
@@ -22,25 +30,24 @@ wreckRemovalMinTime = 120;
 
 wreckRemovalMaxTime = 120;
 
-// GF Earplugs
+	// GF Earplugs
 
 class RscTitles {
-	#include "GF_Earplugs\GF_Earplugs_HPP.hpp"	
+	#include "GF_Earplugs\GF_Earplugs_HPP.hpp"
 };
-
 
 #include "AIS\Effects\BarDlg.hpp"
 
 class CfgFunctions {
-			
+
 	#include "functions\functions.hpp"
 	#include "functions\QS\QS_functions.hpp"
-	
+
 	#include "LARs\spawnComp\functions\functions.cpp"
 	#include "CHVD\CfgFunctions.hpp"
-	
+
 	#include "AIS\cfgFunctions.hpp"
-	
+
 };
 
 #include "compositions\compositions.cfg"
@@ -51,30 +58,28 @@ class CfgSounds
 	sounds[] = {};
 	class beeper
 	{
-	
+
 		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "beeper";
+	name = "beeper";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "a3\missions_f_beta\data\sounds\firing_drills\timer.wss", 1, 1, 300 };
-		
-		titles[] = {0,""};
+	sound[] = { "a3\missions_f_beta\data\sounds\firing_drills\timer.wss", 1, 1, 300 };
 
-	};
-	
-	#include "CRS\f\SFX.hpp"
+	titles[] = {0,""};
 
 };
 
+#include "CRS\f\SFX.hpp"
+
+};
 
 class CfgRemoteExec
 {
 
-	
 };
 
 class Params
-{	
+{
 
 	class Game_Mode
 	{
@@ -83,8 +88,7 @@ class Params
 		values[] = {0, 1, 2};
 		default = 1;
 	};
-	
-	
+
 	class Force_Vanilla
 	{
 		title = "Force Vanilla (Will not load mod assets)";
@@ -92,8 +96,7 @@ class Params
 		values[] = {0, 1};
 		default = 0;
 	};
-	
-	
+
 	class PVP_Enabled
 	{
 		title = "Enable PVP";
@@ -101,8 +104,7 @@ class Params
 		values[] = {0};
 		default = 0;
 	};
-	
-	
+
 	class PVP_Autobalancer
 	{
 		title = "PVP Autobalancer";
@@ -110,32 +112,31 @@ class Params
 		values[] = {0};
 		default = 0;
 	};
-	
-	
-	class Persistent_Player_Pos 
+
+	class Persistent_Player_Pos
 	{
 		title = "[WIP] Persistent Player Position (Must be running Inidbi2)";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 0;
+		default = 1;
 	};
-	
+
 	class Persistent_Player_Loadout
 	{
 		title = "[WIP] Persistent Player Loadout (Must be running Inidbi2)";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 0;
+		default = 1;
 	};
-	
+
 	class Persistent_Player_Role
 	{
 		title = "[WIP] Persistent Player Role (Must be running Inidbi2)";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 0;
+		default = 1;
 	};
-	
+
 	class Persistent_Time
 	{
 		title = "[WIP] Persistent Time And Weather (Must be running Inidbi2)";
@@ -143,15 +144,15 @@ class Params
 		values[] = {0, 1};
 		default = 0;
 	};
-	
+
 	class Persistent_Player_Vehicles
 	{
 		title = "[WIP] Persistent Player Vehicles (Must be running Inidbi2)";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 0;
+		default = 1;
 	};
-	
+
 	class Autosave_Interval
 	{
 		title = "Autosave Interval (Must be running Inidbi2)";
@@ -159,7 +160,7 @@ class Params
 		values[] = {0, 1, 2};
 		default = 1;
 	};
-	
+
 	class AI_Skill
 	{
 		title = "AI Skill";
@@ -167,8 +168,7 @@ class Params
 		values[] = {0, 1, 2};
 		default = 1;
 	};
-	
-	
+
 	class Random_Spawn
 	{
 		title = "Random Starting Spawn";
@@ -176,8 +176,7 @@ class Params
 		values[] = {0, 1};
 		default = 0;
 	};
-	
-	
+
 	class Enable_Stamina
 	{
 		title = "Stamina";
@@ -185,17 +184,15 @@ class Params
 		values[] = {0, 1};
 		default = 0;
 	};
-	
-	
+
 	class Easy_Weapon_Sway
 	{
 		title = "Easier Weapon Sway";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 1;
+		default = 0;
 	};
-	
-	
+
 	class Allow_Withstand
 	{
 		title = "Withstand";
@@ -203,8 +200,7 @@ class Params
 		values[] = {0, 1};
 		default = 1;
 	};
-	
-	
+
 	class AO_Warning
 	{
 		title = "Out Of Bounds Warning (Recommended For Public Servers)";
@@ -212,17 +208,15 @@ class Params
 		values[] = {0, 1};
 		default = 1;
 	};
-	
-	
+
 	class Fast_Travel
 	{
 		title = "Fast Travel";
 		texts[] = {"Off", "On"};
 		values[] = {0, 1};
-		default = 1;
+		default = 0;
 	};
-	
-	
+
 	class Gear_Restrictions
 	{
 		title = "Gear Role Restrictions";
@@ -230,8 +224,7 @@ class Params
 		values[] = {0, 1};
 		default = 1;
 	};
-	
-	
+
 	class Vehicle_Restrictions
 	{
 		title = "Vehicle Role Restrictions";
@@ -239,8 +232,7 @@ class Params
 		values[] = {0, 1};
 		default = 1;
 	};
-	
-	
+
 	class Zeus_Enabled
 	{
 		title = "Zeus Enabled (Admin Only)";
@@ -248,8 +240,7 @@ class Params
 		values[] = {0, 1};
 		default = 1;
 	};
-	
-	
+
 	class dayNightCycleMode
 	{
 		title = "Set Time Multiplier";
@@ -257,8 +248,7 @@ class Params
 		values[] = {0, 1, 2};
 		default = 2;
 	};
-	
-	
+
 	class slowDown_progression
 	{
 		title = "Slower Mission Progression";
@@ -267,14 +257,13 @@ class Params
 		default = 0;
 	};
 
-	
 };
 
 #include "CustomControlClasses.h"
 class MyDialog
 {
 	idd = -1;
-	
+
 	class ControlsBackground
 	{
 		class Control852940444
@@ -291,13 +280,13 @@ class MyDialog
 			colorText[] = {0.8157,0.3098,0.8039,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
+
 		};
-		
+
 	};
 	class Controls
 	{
-		
+
 	};
-	
+
 };
