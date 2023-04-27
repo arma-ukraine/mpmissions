@@ -13,18 +13,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=144;
+		nextID=145;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={688.00537,137.39723,1671.1013};
-		dir[]={0.20297661,-0.54998928,0.81017441};
-		up[]={0.13366498,0.83515942,0.53351909};
-		aside[]={0.97005683,-3.9523002e-007,-0.24303256};
+		pos[]={39.572147,14.743696,1571.7122};
+		dir[]={0.32084101,-0.39664394,0.8600921};
+		up[]={0.13863173,0.9179703,0.37163579};
+		aside[]={0.93694973,1.3061799e-007,-0.34951207};
 	};
 };
 binarizationWanted=0;
-sourceName="JAGER";
+sourceName="jager";
 addons[]=
 {
 	"A3_Data_F_Curator_Virtual",
@@ -34,13 +38,14 @@ addons[]=
 	"jager_main",
 	"A3_Weapons_F",
 	"ace_goggles",
-	"JAGER_money"
+	"JAGER_money",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="A3_Data_F_Curator";
@@ -96,13 +101,23 @@ class AddonsMetaData
 			author="DiRaven#0001";
 			url="https://discord.gg/DYA3dNS";
 		};
+		class Item8
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=14662728;
 class ScenarioData
 {
 	author="DiRaven";
+	respawnDialog=0;
 	disabledAI=1;
+	respawn=3;
+	respawnDelay=60.214176;
 	class Header
 	{
 		gameType="Coop";
@@ -256,7 +271,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="None";
+								value="Counter";
 							};
 						};
 					};
@@ -21713,9 +21728,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={38.999001,5.7349854,1586.381};
+				position[]={39,5.7350006,1586.381};
 				angles[]={0,0,0.014992379};
 			};
+			isPlayer=1;
 			isPlayable=1;
 			id=4;
 			type="VirtualCurator_F";
@@ -23148,64 +23164,13 @@ class Mission
 		};
 		class Item24
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={39.647644,5.7491412,1589.2452};
-						angles[]={6.2806892,1.389701,0.017488198};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-						isPlayable=1;
-					};
-					id=143;
-					type="B_G_Survivor_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male01GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=142;
+			dataType="Marker";
+			position[]={32.112999,5.6220002,1588.056};
+			name="respawn_west";
+			type="Empty";
+			angle=84.447105;
+			id=144;
+			atlOffset=-0.00025749207;
 		};
 	};
 };

@@ -11,4 +11,4 @@ if (isNull _dialog) exitWith {};
 _funds = [] call grad_lbm_fnc_getCurrentFunds;
 
 _myfundsCtrl = _dialog displayCtrl grad_lbm_MYFUNDS;
-_myfundsCtrl ctrlSetText format ["ГРОШІ: %1", _funds];
+_myfundsCtrl ctrlSetText format ["ГРОШІ: %1 грн.", _funds];
