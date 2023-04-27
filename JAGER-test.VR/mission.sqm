@@ -1,0 +1,283 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	mods[]=
+	{
+		"WBK_Zombies_AdvancedEditorSettings"
+	};
+	class ItemIDProvider
+	{
+		nextID=12;
+	};
+	class Camera
+	{
+		pos[]={1586.2705,16.409384,3408.3967};
+		dir[]={-0.080182724,-0.67027211,0.73777097};
+		up[]={-0.072420329,0.74211538,0.66634822};
+		aside[]={0.99414575,0,0.10804616};
+	};
+};
+binarizationWanted=0;
+sourceName="jager-test";
+addons[]=
+{
+	"A3_Modules_F_Curator_Curator",
+	"A3_Data_F_Curator_Virtual",
+	"jager_main",
+	"A3_Characters_F",
+	"jager_characters"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="JAGER_main";
+			name="Jager Main";
+			author="DiRaven#0001";
+			url="https://discord.gg/DYA3dNS";
+		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="JAGER_characters";
+			name="Jager Characters";
+			author="DiRaven#0001";
+			url="https://discord.gg/DYA3dNS";
+		};
+	};
+};
+randomSeed=8141888;
+class ScenarioData
+{
+	author="DiRaven";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=7;
+		class Item0
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1580.0275,5,3424.4768};
+			};
+			id=0;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item1
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1580.3713,5,3421.9187};
+			};
+			isPlayer=1;
+			id=1;
+			type="VirtualCurator_F";
+		};
+		class Item2
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1583.9562,5,3422.0911};
+			};
+			id=2;
+			type="JAGER_main_moduleEditorDynamicSimulation";
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1585.1021,5.0014391,3415.1743};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=4;
+					type="B_support_AMort_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3;
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1585.9863,5,3422.0732};
+			};
+			id=8;
+			type="JAGER_main_moduleBodyLoot";
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1587.889,5,3422.0686};
+			};
+			id=9;
+			type="JAGER_main_moduleColorCorrection";
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1589.9645,5,3422.0818};
+			};
+			id=11;
+			type="JAGER_characters_moduleCharacters";
+		};
+	};
+};
