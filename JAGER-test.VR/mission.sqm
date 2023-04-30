@@ -5,21 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	mods[]=
 	{
-		"WBK_Zombies_AdvancedEditorSettings"
+		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=12;
+		nextID=82;
+	};
+	class LayerIndexProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={1586.2705,16.409384,3408.3967};
-		dir[]={-0.080182724,-0.67027211,0.73777097};
-		up[]={-0.072420329,0.74211538,0.66634822};
-		aside[]={0.99414575,0,0.10804616};
+		pos[]={1587.6282,21.123873,3439.9465};
+		dir[]={0.048457805,-0.47307968,0.87968963};
+		up[]={0.026020534,0.88101792,0.47236863};
+		aside[]={0.99848902,-4.8676156e-008,-0.055002026};
 	};
 };
 binarizationWanted=0;
@@ -29,14 +33,35 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"jager_main",
+	"A3_Supplies_F_Heli_Slingload",
+	"ace_rearm",
+	"ace_cargo",
 	"A3_Characters_F",
-	"jager_characters"
+	"ace_mk6mortar",
+	"A3_Weapons_F_Rifles_MX",
+	"A3_Weapons_F_Acc",
+	"ace_realisticnames",
+	"ace_scopes",
+	"ace_laserpointer",
+	"A3_Weapons_F",
+	"ace_smallarms",
+	"ace_ballistics",
+	"A3_Weapons_F_Pistols_P07",
+	"ace_goggles",
+	"ace_nightvision",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment",
+	"ace_attach",
+	"ace_chemlights",
+	"ace_nlaw",
+	"A3_Weapons_F_Mark"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=21;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -60,19 +85,135 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item4
 		{
-			className="JAGER_characters";
-			name="Jager Characters";
-			author="DiRaven#0001";
-			url="https://discord.gg/DYA3dNS";
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item5
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="ace_mk6mortar";
+			name="ACE3 - Mk6 Mortar";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item8
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="ace_scopes";
+			name="ACE3 - Scopes";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item10
+		{
+			className="ace_laserpointer";
+			name="ACE3 - Laser Pointer";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item11
+		{
+			className="ace_smallarms";
+			name="ACE3 - Small Arms";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item12
+		{
+			className="ace_ballistics";
+			name="ACE3 - Ballistics";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item13
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item14
+		{
+			className="ace_nightvision";
+			name="ACE3 - Night Vision";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item15
+		{
+			className="ace_medical_engine";
+			name="ACE3 - Medical Engine";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item16
+		{
+			className="ace_medical_treatment";
+			name="ACE3 - Medical Treatment";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item17
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item18
+		{
+			className="ace_chemlights";
+			name="ace_chemlights";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item19
+		{
+			className="ace_nlaw";
+			name="ACE3 - NLAW";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item20
+		{
+			className="A3_Weapons_F_Mark";
+			name="Arma 3 Marksmen - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
+};
+dlcs[]=
+{
+	"Heli"
 };
 randomSeed=8141888;
 class ScenarioData
@@ -102,7 +243,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=18;
 		class Item0
 		{
 			dataType="Logic";
@@ -174,9 +315,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1580.3713,5,3421.9187};
+				position[]={1583.0797,5,3401.3899};
 			};
-			isPlayer=1;
 			id=1;
 			type="VirtualCurator_F";
 		};
@@ -185,12 +325,113 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1583.9562,5,3422.0911};
+				position[]={1587.9105,5,3422};
 			};
 			id=2;
 			type="JAGER_main_moduleEditorDynamicSimulation";
 		};
 		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1583.9041,5,3422.0774};
+			};
+			id=8;
+			type="JAGER_main_moduleBodyLoot";
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1585.9998,5,3422.0063};
+			};
+			id=9;
+			type="JAGER_main_moduleColorCorrection";
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1589.9784,5,3422.0288};
+			};
+			id=16;
+			type="JAGER_main_moduleFuelConsumption";
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1584.59,5,3473.2109};
+			};
+			name="spawner";
+			areaSize[]={50,-1,50};
+			flags=1;
+			id=44;
+			type="JAGER_main_moduleSpawner";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="JAGER_main_moduleSpawner_MinGroups";
+					expression="_this setVariable ['MinGroups',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="JAGER_main_moduleSpawner_SpawnActivationDistance";
+					expression="_this setVariable ['SpawnActivationDistance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=5001;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="JAGER_main_moduleSpawner_MaxGroups";
+					expression="_this setVariable ['MaxGroups',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={-42.115147,9778.4512,-1103.4314};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=60;
+			type="B_Slingload_01_Ammo_F";
+			atlOffset=9772.0889;
+		};
+		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -202,16 +443,354 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1585.1021,5.0014391,3415.1743};
+						position[]={1598.0187,5.0014391,3482.865};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
-						isPlayable=1;
+						rank="SERGEANT";
 					};
-					id=4;
-					type="B_support_AMort_F";
+					id=66;
+					type="B_Soldier_TL_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=65;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1590.6801,5.2840548,3467.2549};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=70;
+			type="ACE_Box_82mm_Mo_Combo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""arifle_Mk20C_ACO_F""],[5]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1593.0187,5.0014391,3477.865};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=68;
+					type="B_soldier_AA_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=71;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1599.7345,5.0014391,3476.2249};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=67;
+					type="B_soldier_AA_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=72;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1608.0187,5.0014391,3472.865};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=69;
+					type="B_soldier_AAA_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=73;
+		};
+		class Item13
+		{
+			dataType="Trigger";
+			position[]={1583.9039,5,3473.644};
+			class Attributes
+			{
+				sizeA=70;
+				sizeB=70;
+			};
+			id=37;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1601.6689,5.0014391,3448.2852};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="arifle_MX_ACO_pointer_F";
+								optics="optic_Aco";
+								flashlight="acc_pointer_IR";
+								firemode="arifle_MX_ACO_pointer_F:Single";
+								class primaryMuzzleMag
+								{
+									name="30Rnd_65x39_caseless_mag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="hgun_P07_F";
+								class primaryMuzzleMag
+								{
+									name="16Rnd_9x21_Mag";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="U_B_CombatUniform_mcam";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_PlateCarrier1_rgr";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=6;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="16Rnd_9x21_Mag";
+										count=2;
+										ammoLeft=17;
+									};
+									class Item2
+									{
+										name="HandGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="Chemlight_green";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_AssaultPack_mcamo_Ammo";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=9;
+									class Item0
+									{
+										name="30Rnd_65x39_caseless_mag";
+										count=6;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="100Rnd_65x39_caseless_mag";
+										count=1;
+										ammoLeft=100;
+									};
+									class Item2
+									{
+										name="NLAW_F";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="HandGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="MiniGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="1Rnd_HE_Grenade_shell";
+										count=3;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="3Rnd_HE_Grenade_shell";
+										count=1;
+										ammoLeft=3;
+									};
+									class Item7
+									{
+										name="10Rnd_338_Mag";
+										count=2;
+										ammoLeft=10;
+									};
+									class Item8
+									{
+										name="20Rnd_762x51_Mag";
+										count=2;
+										ammoLeft=20;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=4;
+									};
+									class Item1
+									{
+										name="JAGER_main_CopperScrap";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Combat";
+							hmd="NVGoggles";
+							headgear="H_HelmetB_grass";
+						};
+					};
+					id=76;
+					type="B_Soldier_A_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -223,7 +802,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Male02ENG";
+									value="Male10ENG";
 								};
 							};
 						};
@@ -236,7 +815,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=1;
+									value=1.05;
 								};
 							};
 						};
@@ -247,37 +826,438 @@ class Mission
 			class Attributes
 			{
 			};
-			id=3;
+			id=75;
 		};
-		class Item4
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1601.8914,5.2840548,3452.01};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="crate";
+			};
+			id=77;
+			type="ACE_Box_82mm_Mo_Combo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[""ACE_elasticBandage"",""JAGER_main_Uah_20"",""JAGER_main_Uah_100"",""JAGER_main_Brash"",""JAGER_main_IronScrap"",""JAGER_main_SteelScrap""],[1,1,2,1,1,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1585.9863,5,3422.0732};
+				position[]={1601.049,5,3452.467};
 			};
-			id=8;
-			type="JAGER_main_moduleBodyLoot";
-		};
-		class Item5
-		{
-			dataType="Logic";
-			class PositionInfo
+			id=78;
+			type="JAGER_main_moduleBuyer";
+			class CustomAttributes
 			{
-				position[]={1587.889,5,3422.0686};
+				class Attribute0
+				{
+					property="JAGER_main_moduleBuyer_SpawnActivationDistance";
+					expression="_this setVariable ['SpawnActivationDistance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.80000001;
+						};
+					};
+				};
+				nAttributes=1;
 			};
-			id=9;
-			type="JAGER_main_moduleColorCorrection";
 		};
-		class Item6
+		class Item17
 		{
-			dataType="Logic";
-			class PositionInfo
+			dataType="Layer";
+			name="Characters";
+			class Entities
 			{
-				position[]={1589.9645,5,3422.0818};
+				items=2;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1578.666,5,3466.812};
+					};
+					name="Character_Default";
+					id=79;
+					type="JAGER_main_moduleCharacter";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="JAGER_main_moduleCharacter_CamouflageCoef";
+							expression="_this setVariable ['CamouflageCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="JAGER_main_moduleCharacter_CanTurret";
+							expression="_this setVariable ['CanTurret',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Car,Motorcycle";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="JAGER_main_moduleCharacter_Medic";
+							expression="_this setVariable ['Medic',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="JAGER_main_moduleCharacter_AimCoef";
+							expression="_this setVariable ['AimCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="JAGER_main_moduleCharacter_CanDrive";
+							expression="_this setVariable ['CanDrive',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Car,Motorcycle";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="JAGER_main_moduleCharacter_ExplosiveSpecialist";
+							expression="_this setVariable ['ExplosiveSpecialist',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="JAGER_main_moduleCharacter_AudibleCoef";
+							expression="_this setVariable ['AudibleCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="JAGER_main_moduleCharacter_Engineer";
+							expression="_this setVariable ['Engineer',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="JAGER_main_moduleCharacter_OwnerId";
+							expression="_this setVariable ['OwnerId',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="default";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="JAGER_main_moduleCharacter_RecoilCoef";
+							expression="_this setVariable ['RecoilCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1580.47,5,3466.532};
+					};
+					name="Character_DiRaven";
+					id=81;
+					type="JAGER_main_moduleCharacter";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="JAGER_main_moduleCharacter_CamouflageCoef";
+							expression="_this setVariable ['CamouflageCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="JAGER_main_moduleCharacter_CanTurret";
+							expression="_this setVariable ['CanTurret',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Car,Motorcycle";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="JAGER_main_moduleCharacter_Medic";
+							expression="_this setVariable ['Medic',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="JAGER_main_moduleCharacter_AimCoef";
+							expression="_this setVariable ['AimCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="JAGER_main_moduleCharacter_CanDrive";
+							expression="_this setVariable ['CanDrive',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Car,Motorcycle";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="JAGER_main_moduleCharacter_ExplosiveSpecialist";
+							expression="_this setVariable ['ExplosiveSpecialist',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="JAGER_main_moduleCharacter_AudibleCoef";
+							expression="_this setVariable ['AudibleCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="JAGER_main_moduleCharacter_Engineer";
+							expression="_this setVariable ['Engineer',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="JAGER_main_moduleCharacter_OwnerId";
+							expression="_this setVariable ['OwnerId',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="76561197999599845";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="JAGER_main_moduleCharacter_RecoilCoef";
+							expression="_this setVariable ['RecoilCoef',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=50;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
 			};
-			id=11;
-			type="JAGER_characters_moduleCharacters";
+			id=80;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=6;
+		};
+		class Links
+		{
+			items=6;
+			class Item0
+			{
+				linkID=0;
+				item0=66;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=67;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=68;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=70;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=69;
+				item1=44;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=78;
+				item1=77;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };

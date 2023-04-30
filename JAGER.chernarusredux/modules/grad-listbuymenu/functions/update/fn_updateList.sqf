@@ -21,7 +21,18 @@ _listIndex = 0;
 	if (call compile _condition) then {
 		_itemConfigName = configName _config;
 		_displayName = [(_config >> "displayName"), "text", [_itemConfigName] call grad_lbm_fnc_getDisplayName] call CBA_fnc_getConfigEntry;
-		_price = [(_config >> "price"), "number", 999999] call CBA_fnc_getConfigEntry;
+
+		// get price from grad config.
+		_price = [(_config >> "price"), "number", 0] call CBA_fnc_getConfigEntry;
+		if (_price == 0) then {
+			// if grad config has no price - try to get it from JAGER config.
+			private _class = configName _config;
+			_price = getNumber (configFile >> "CfgWeapons" >> _class >> "JAGER_main_value");
+		};
+		if (_price == 0) then {
+			// set very high price by default.
+			_price = 999999;
+		};
 		_description = [(_config >> "description"), "text", [_itemConfigName] call grad_lbm_fnc_getDescription] call CBA_fnc_getConfigEntry;
 		_code = compile ([(_config >> "code"), "text", ""] call CBA_fnc_getConfigEntry);
 		_picturePath = [(_config >> "picture"), "text", ""] call CBA_fnc_getConfigEntry;
