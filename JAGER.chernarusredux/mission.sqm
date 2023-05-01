@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1826.5505,534.61041,12401.202};
-		dir[]={-0.67355931,-0.73376167,-0.088976353};
-		up[]={-0.72744411,0.67940563,-0.096093975};
-		aside[]={-0.13096142,3.8809958e-008,0.99139094};
+		pos[]={1831.0865,532.00146,12402.948};
+		dir[]={-0.78719223,-0.59989947,-0.14300013};
+		up[]={-0.59023958,0.80007541,-0.10722202};
+		aside[]={-0.17873332,7.4505806e-009,0.98389757};
 	};
 };
 binarizationWanted=0;
@@ -25728,7 +25728,7 @@ class Mission
 										class data
 										{
 											singleType="SCALAR";
-											value=0.0099999998;
+											value=0.1;
 										};
 									};
 								};
@@ -25753,8 +25753,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1820.5023,526.04877,12400.803};
-								angles[]={0.097196408,0,6.223259};
+								position[]={1820.5027,526.04889,12400.803};
+								angles[]={0.097197384,0,6.2232509};
 							};
 							side="Empty";
 							flags=4;
@@ -25763,7 +25763,6 @@ class Mission
 							};
 							id=302;
 							type="rhs_3Ya40_1_single";
-							atlOffset=-0.00018310547;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -25775,7 +25774,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[[[[],[]],[[],[]],[[""JAGER_main_Brash""],[25]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""JAGER_main_Brash""],[1]],[[],[]]],false]";
 										};
 									};
 								};
