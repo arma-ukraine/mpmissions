@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=82;
+		nextID=83;
 	};
 	class LayerIndexProvider
 	{
-		nextID=2;
+		nextID=4;
 	};
 	class Camera
 	{
-		pos[]={1587.6282,21.123873,3439.9465};
-		dir[]={0.048457805,-0.47307968,0.87968963};
-		up[]={0.026020534,0.88101792,0.47236863};
-		aside[]={0.99848902,-4.8676156e-008,-0.055002026};
+		pos[]={1583.6959,54.314407,3441.2813};
+		dir[]={-0.00081383495,-0.76691371,0.6417504};
+		up[]={-0.00097255624,0.64174908,0.76691395};
+		aside[]={0.99999946,-4.3596629e-009,0.0012681391};
 	};
 };
 binarizationWanted=0;
@@ -55,13 +55,14 @@ addons[]=
 	"ace_attach",
 	"ace_chemlights",
 	"ace_nlaw",
-	"A3_Weapons_F_Mark"
+	"A3_Weapons_F_Mark",
+	"A3_Structures_F_Households_House_Big02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -209,6 +210,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item21
+		{
+			className="A3_Structures_F_Households";
+			name="Arma 3 - Houses";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -243,7 +251,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			dataType="Logic";
@@ -376,18 +384,31 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="JAGER_main_moduleSpawner_MinGroups";
-					expression="_this setVariable ['MinGroups',_value,true];";
+					property="JAGER_main_moduleSpawner_UnitDensity";
+					expression="_this setVariable ['UnitDensity',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=0.0040000002;
 						};
 					};
 				};
 				class Attribute1
+				{
+					property="JAGER_main_moduleSpawner_LootDensity";
+					expression="_this setVariable ['LootDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.0040000002;
+						};
+					};
+				};
+				class Attribute2
 				{
 					property="JAGER_main_moduleSpawner_SpawnActivationDistance";
 					expression="_this setVariable ['SpawnActivationDistance',_value,true];";
@@ -396,20 +417,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=5001;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="JAGER_main_moduleSpawner_MaxGroups";
-					expression="_this setVariable ['MaxGroups',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=3;
+							value=500;
 						};
 					};
 				};
@@ -465,7 +473,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1590.6801,5.2840548,3467.2549};
+				position[]={1589.839,5.2840548,3467.949};
 			};
 			side="Empty";
 			flags=4;
@@ -485,7 +493,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""arifle_Mk20C_ACO_F""],[5]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[""arifle_Mk20C_ACO_F""],[5]],[[],[]],[[""JAGER_main_Uah_100"",""JAGER_main_Uah_1""],[2,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -833,7 +841,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1601.8914,5.2840548,3452.01};
+				position[]={1628.3334,5.2840548,3472.3892};
 			};
 			side="Empty";
 			flags=4;
@@ -866,7 +874,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1601.049,5,3452.467};
+				position[]={1623.9456,5,3472.4885};
 			};
 			id=78;
 			type="JAGER_main_moduleBuyer";
@@ -874,8 +882,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="JAGER_main_moduleBuyer_SpawnActivationDistance";
-					expression="_this setVariable ['SpawnActivationDistance',_value,true];";
+					property="JAGER_main_moduleBuyer_BuyPriceMultiplier";
+					expression="_this setVariable ['BuyPriceMultiplier',_value,true];";
 					class Value
 					{
 						class data
@@ -1187,6 +1195,21 @@ class Mission
 				};
 			};
 			id=80;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1570.9913,7.8839674,3477.5576};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=82;
+			type="Land_i_House_Big_02_V2_F";
 		};
 	};
 	class Connections
