@@ -1,1 +1,1 @@
-[] execVM "briefing.sqf";
+[] execVM "fnc_loadBriefing.sqf";

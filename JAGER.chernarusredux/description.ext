@@ -17,7 +17,7 @@ disableChannels[] = {
 		{2, true, true},	//--- Command Chat
 		{3, true, true},	//--- Group Chat
 		{4, true, true},	//--- Vehicle Chat
-		{5, false, true}, //--- Direct Chat
+		{5, true, true},  //--- Direct Chat
 		{6, true, true}		//--- System Chat
 };
 
