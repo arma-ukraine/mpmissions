@@ -11,7 +11,7 @@ class CfgGradPersistence
   saveUnits = 0;
   saveVehicles = 3;
   saveContainers = 3;
-  saveStatics = 0;
+  saveStatics = 3;
   saveGradFortificationsStatics = 0;
   saveMarkers = 0;
   saveTasks = 0;
@@ -30,16 +30,22 @@ class CfgGradPersistence
 
   class customVariables
   {
-    class var1
+    class StaticWaterSupply
     {
-      varName = "acex_field_rations_hunger";
-      varNamespace = "unit";
+      varName = "ace_field_rations_currentWaterSupply";
+      varNamespace = "static";
       public = 1;
     };
-    class var2
+    class PlayerThirst
     {
       varName = "acex_field_rations_thirst";
-      varNamespace = "unit";
+      varNamespace = "player";
+      public = 1;
+    };
+    class PlayerHunger
+    {
+      varName = "acex_field_rations_hunger";
+      varNamespace = "player";
       public = 1;
     };
   };

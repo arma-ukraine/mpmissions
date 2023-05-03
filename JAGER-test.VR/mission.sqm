@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=83;
+		nextID=88;
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={1583.6959,54.314407,3441.2813};
-		dir[]={-0.00081383495,-0.76691371,0.6417504};
-		up[]={-0.00097255624,0.64174908,0.76691395};
-		aside[]={0.99999946,-4.3596629e-009,0.0012681391};
+		pos[]={1595.3407,59.528267,3412.7815};
+		dir[]={0.014576684,-0.60726702,0.79436487};
+		up[]={0.011141623,0.79449749,0.6071645};
+		aside[]={0.9998315,1.5650585e-008,-0.018347479};
 	};
 };
 binarizationWanted=0;
@@ -56,13 +56,14 @@ addons[]=
 	"ace_chemlights",
 	"ace_nlaw",
 	"A3_Weapons_F_Mark",
-	"A3_Structures_F_Households_House_Big02"
+	"A3_Structures_F_Households_House_Big02",
+	"diwako_anomalies"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -217,6 +218,12 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item22
+		{
+			className="diwako_anomalies";
+			name="diwako_anomalies";
+			author="diwako";
+		};
 	};
 };
 dlcs[]=
@@ -227,6 +234,103 @@ randomSeed=8141888;
 class ScenarioData
 {
 	author="DiRaven";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											singleType="STRING";
+											value="diwako_anomalies_enable";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="BOOL";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								singleType="ANY";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -251,7 +355,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			dataType="Logic";
@@ -373,7 +477,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1584.59,5,3473.2109};
+				position[]={1587.451,5,3460.447};
 			};
 			name="spawner";
 			areaSize[]={50,-1,50};
@@ -384,31 +488,18 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="JAGER_main_moduleSpawner_UnitDensity";
-					expression="_this setVariable ['UnitDensity',_value,true];";
+					property="JAGER_main_moduleSpawner_AnomaliesMeatgrinder";
+					expression="_this setVariable ['AnomaliesMeatgrinder',_value,true];";
 					class Value
 					{
 						class data
 						{
-							singleType="SCALAR";
-							value=0.0040000002;
+							singleType="BOOL";
+							value=0;
 						};
 					};
 				};
 				class Attribute1
-				{
-					property="JAGER_main_moduleSpawner_LootDensity";
-					expression="_this setVariable ['LootDensity',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.0040000002;
-						};
-					};
-				};
-				class Attribute2
 				{
 					property="JAGER_main_moduleSpawner_SpawnActivationDistance";
 					expression="_this setVariable ['SpawnActivationDistance',_value,true];";
@@ -421,7 +512,150 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute2
+				{
+					property="JAGER_main_moduleSpawner_UnitDensity";
+					expression="_this setVariable ['UnitDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.0040000002;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="JAGER_main_moduleSpawner_AnomaliesBurner";
+					expression="_this setVariable ['AnomaliesBurner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="JAGER_main_moduleSpawner_MaxDeviation";
+					expression="_this setVariable ['MaxDeviation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.30000001;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="JAGER_main_moduleSpawner_AnomaliesSpringboard";
+					expression="_this setVariable ['AnomaliesSpringboard',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="JAGER_main_moduleSpawner_AnomaliesFruitPunch";
+					expression="_this setVariable ['AnomaliesFruitPunch',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="JAGER_main_moduleSpawner_LootDensity";
+					expression="_this setVariable ['LootDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.0040000002;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="JAGER_main_moduleSpawner_BuildingsPercentage";
+					expression="_this setVariable ['BuildingsPercentage',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="JAGER_main_moduleSpawner_AnomaliesElectra";
+					expression="_this setVariable ['AnomaliesElectra',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="JAGER_main_moduleSpawner_AnomaliesFog";
+					expression="_this setVariable ['AnomaliesFog',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="JAGER_main_moduleSpawner_AnomalyDensity";
+					expression="_this setVariable ['AnomalyDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.0060000001;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="JAGER_main_moduleSpawner_Cooldown";
+					expression="_this setVariable ['Cooldown',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=10;
+						};
+					};
+				};
+				nAttributes=13;
 			};
 		};
 		class Item7
@@ -1210,6 +1444,16 @@ class Mission
 			};
 			id=82;
 			type="Land_i_House_Big_02_V2_F";
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1597.7504,5,3460.1467};
+			};
+			id=83;
+			type="anoamly_moduleBurner";
 		};
 	};
 	class Connections
