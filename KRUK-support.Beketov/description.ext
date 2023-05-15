@@ -23,9 +23,9 @@ respawnTemplates[] = {"MenuPosition","Tickets"};
 respawnOnStart = 0;
 respawnDialog = 0;
 
-loadScreen="kplogo.jpg";
-onLoadMission = "www.killahpotatoes.de";
-author = "[KP] Wyqer";
-onLoadName = "KP Support Altis RHS";
+loadScreen="logo.jpg";
+onLoadMission = "Arma Ukraine: discord.gg/DYA3dNS";
+author = "DiRaven";
+onLoadName = "KRUK: Ground Support";
 
 #include "cfgGroups.hpp"
