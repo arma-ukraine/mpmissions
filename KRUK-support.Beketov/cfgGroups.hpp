@@ -1,4 +1,4 @@
-#define BLUFOR_SL rhsgref_cdf_b_reg_officer
+#define BLUFOR_SL rhsgref_cdf_b_reg_squadleader
 #define BLUFOR_TL rhsgref_cdf_b_reg_squadleader
 #define BLUFOR_GRENADIER rhsgref_cdf_b_reg_grenadier
 #define BLUFOR_AT_LIGHT rhsgref_cdf_b_reg_rifleman_rpg75
